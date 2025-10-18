@@ -3,11 +3,16 @@
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --color-halloween-1: #000101;
+  --color-halloween-2: #888b3e;
+  --color-halloween-3: #b9b468;
+  --color-halloween-4: #fefbc1;
 }
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  @apply font-sans bg-white text-halloween-1 dark:bg-halloween-1 dark:text-halloween-4;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
