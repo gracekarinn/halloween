@@ -27,7 +27,7 @@ export function CountdownTimer({
           minutes: number;
           seconds: number;
         }) => (
-          <div className="flex gap-6 text-3xl font-semibold">
+          <div className="flex gap-6 text-3xl font-semibold text-halloween-4">
             <div className="flex flex-col items-center">
               <span>{days}</span>
               <span className="text-halloween-3 text-sm">Days</span>
