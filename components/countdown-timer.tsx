@@ -1,15 +1,33 @@
-import { Link } from "react-router-dom";
-import Countdown from "react-countdown";
+import CountdownLib from "react-countdown";
 
-const targetDate = new Date("2025-10-31T00:00:00");
+const Countdown = (CountdownLib as any).default || CountdownLib;
 
-export default function CountdownTimer() {
+type CountdownTimerProps = {
+  targetDate: Date;
+  onComplete?: () => void;
+};
+
+export function CountdownTimer({
+  targetDate,
+  onComplete,
+}: CountdownTimerProps) {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-halloween-1 text-halloween-4 font-sans text-center">
+    <div className="flex flex-col items-center text-halloween-1 dark:text-halloween-4">
       <Countdown
         date={targetDate}
-        renderer={({ days, hours, minutes, seconds }) => (
-          <div className="flex gap-6 text-4xl font-semibold">
+        onComplete={onComplete}
+        renderer={({
+          days,
+          hours,
+          minutes,
+          seconds,
+        }: {
+          days: number;
+          hours: number;
+          minutes: number;
+          seconds: number;
+        }) => (
+          <div className="flex gap-6 text-3xl font-semibold">
             <div className="flex flex-col items-center">
               <span>{days}</span>
               <span className="text-halloween-3 text-sm">Days</span>
@@ -29,12 +47,6 @@ export default function CountdownTimer() {
           </div>
         )}
       />
-      <Link
-        to="/home"
-        className="mt-12 bg-halloween-3 text-halloween-1 px-6 py-3 rounded-xl text-lg font-semibold hover:bg-halloween-2 transition"
-      >
-        Enter Memek
-      </Link>
     </div>
   );
 }
