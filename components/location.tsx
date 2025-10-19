@@ -2,7 +2,7 @@ import { TramFront } from "lucide-react";
 
 export function Location() {
   return (
-    <section className="w-full flex flex-col items-center text-center mt-20 mb-16 text-[#FEFBC1] px-4">
+    <section className="">
       <h2 className="text-2xl md:text-4xl font-bold mb-4">Venue:</h2>
       <h3 className="text-xl md:text-3xl font-semibold mb-8">
         Sonar Lusso, Menteng
