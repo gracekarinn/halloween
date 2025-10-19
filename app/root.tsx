@@ -33,7 +33,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="min-h-screen flex flex-col bg-[url('/grain.png')] bg-repeat bg-[length:200px_200px] pt-10">
+      <body className="min-h-screen flex flex-col bg-[url('/grain.png')] bg-repeat bg-[length:200px_200px]">
         <main className="flex-1">{children}</main>
         <ScrollRestoration />
         <Scripts />
