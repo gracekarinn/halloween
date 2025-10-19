@@ -7,12 +7,14 @@ import { Location } from "components/location";
 
 export function MainPage() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen overflow-hidden bg-[url('/grain.png')] bg-repeat bg-[length:200px_200px] text-center text-[#fffbe6]">
-      <img
-        src="/hero.png"
-        alt="Hero background"
-        className="mx-auto w-full max-w-[600px] pointer-events-none select-none"
-      />
+    <main className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden text-center text-[#fffbe6] pt-10">
+      <div className="relative w-full max-w-[70vh] h-[40vh] lg:h-[50vh] overflow-hidden bg-[url('/atas.png')] bg-cover bg-center flex flex-col items-center justify-center">
+        <img
+          src="/hero.png"
+          alt="Hero background"
+          className="mx-auto w-full max-w-[600px] pointer-events-none select-none"
+        />
+      </div>
 
       <div className="z-10 mt-32">
         <CountdownTimer targetDate={new Date("2025-10-31T00:00:00")} />
@@ -39,11 +41,22 @@ export function MainPage() {
         <LastYear />
       </div>
 
-      <div className="z-10 pt-4">
+      <div className="z-10 -translate-y-40">
+        <div className="absolute">
+          <img
+            src="/virgo.png"
+            alt="Virgo decoration"
+            className="relative w-full h-auto translate-x-[-50%] md:hidden"
+          />
+        </div>
         <Location />
       </div>
 
-      <div className="z-10 pt-16 pb-24 flex flex-col items-center text-center text-[#FEFBC1]">
+      <div className="relative w-full -translate-y-16">
+        <div className="absolute bottom-[-80px] w-full h-[40vh] lg:h-[50vh] bg-[url('/atas.png')] bg-cover bg-center opacity-90 pointer-events-none select-none"></div>
+      </div>
+
+      <div className="z-10 pt-16 pb-24 flex flex-col items-center text-center text-[#FEFBC1] -translate-y-36">
         <h2 className="text-lg md:text-xl text-[#C44B1A] tracking-widest mb-4">
           ERROR 404: COSTUME NOT FOUND
         </h2>
@@ -53,6 +66,8 @@ export function MainPage() {
           COME IN YOUR BOO-EST FIT.
         </p>
       </div>
+
+      <div className="pt-10 absolute translate-y-1/2 bottom-0 w-full h-[40vh] max-lg:bg-[url('/period.png')] bg-cover bg-center opacity-80 pointer-events-none select-none"></div>
     </main>
   );
 }
