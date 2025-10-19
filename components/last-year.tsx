@@ -7,7 +7,7 @@ export function LastYear() {
 
       <div className="w-full max-w-4xl flex justify-center">
         <img
-          src="/foto-orang.png"
+          src="/fotorevisi.png"
           alt="Last Year's Fright"
           className="w-full h-auto object-contain"
         />
