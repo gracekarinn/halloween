@@ -42,6 +42,17 @@ export function MainPage() {
       <div className="z-10 pt-4">
         <Location />
       </div>
+
+      <div className="z-10 pt-16 pb-24 flex flex-col items-center text-center text-[#FEFBC1]">
+        <h2 className="text-lg md:text-xl text-[#C44B1A] tracking-widest mb-4">
+          ERROR 404: COSTUME NOT FOUND
+        </h2>
+        <p className="text-2xl md:text-3xl leading-snug max-w-xl">
+          DON'T BE THAT BUG.
+          <br />
+          COME IN YOUR BOO-EST FIT.
+        </p>
+      </div>
     </main>
   );
 }
