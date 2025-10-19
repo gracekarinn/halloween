@@ -1,7 +1,7 @@
 export function LastYear() {
   return (
-    <section className="w-full flex flex-col items-center text-center mt-20 mb-16 text-[#FEFBC1] px-4">
-      <h2 className="text-2xl md:text-4xl font-bold mb-10">
+    <section className="w-full flex flex-col items-center text-center mt-16  text-[#FEFBC1] px-4">
+      <h2 className="text-2xl md:text-4xl font-bold">
         Last year&apos;s Fright
       </h2>
 

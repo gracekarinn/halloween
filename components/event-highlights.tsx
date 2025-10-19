@@ -1,6 +1,6 @@
 export function EventHighlights() {
   return (
-    <section className="flex flex-row justify-between items-end w-full max-w-3xl mx-auto text-[#FEFBC1] font-bold text-lg md:text-xl mt-12 px-4 gap-x-10">
+    <section className="flex flex-row justify-between items-end w-full max-w-3xl mx-auto text-[#FEFBC1] font-bold text-lg md:text-xl px-4 gap-x-10 pt-4">
       <div className="flex flex-col gap-1 md:gap-6 items-start">
         <div className="flex items-center gap-3">
           <img
@@ -43,7 +43,7 @@ export function EventHighlights() {
           Only
         </span>
         <span className="text-4xl md:text-5xl font-bold leading-tight w-full text-right">
-          175K
+          185K
         </span>
         <span className="text-base md:text-lg w-full text-right">
           FUN ALL NIGHT

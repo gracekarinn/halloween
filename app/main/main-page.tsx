@@ -33,7 +33,7 @@ export function MainPage() {
         </div>
       </div>
 
-      <div className="z-10 pt-4">
+      <div className="z-10">
         <EventHighlights />
       </div>
 
@@ -46,7 +46,7 @@ export function MainPage() {
         />
       </div>
 
-      <div className="relative w-full flex flex-col items-center justify-center mt-8 mb-16 min-h-[400px]">
+      <div className="relative w-full flex flex-col items-center justify-center mt-8 mb-8 min-h-[400px]">
         <div className="relative z-10">
           <Location />
         </div>
