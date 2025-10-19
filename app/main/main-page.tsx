@@ -8,7 +8,7 @@ import { Location } from "components/location";
 export function MainPage() {
   return (
     <main className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden text-center text-[#fffbe6] pt-10">
-      <div className="relative w-full max-w-[70vh] h-[40vh] lg:h-[50vh] overflow-hidden bg-[url('/atas.png')] bg-contain bg-center flex flex-col items-center justify-center">
+      <div className="relative w-full max-w-[70vh] h-[40vh] md:h-[50vh] overflow-hidden bg-[url('/atas.png')] bg-cover bg-center flex flex-col items-center justify-center">
         <img
           src="/hero.png"
           alt="Hero background"
