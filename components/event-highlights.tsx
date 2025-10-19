@@ -9,7 +9,9 @@ export function EventHighlights() {
             className="w-4 h-4 md:w-5 md:h-5 object-contain"
           />
           <span>Free Flow</span>
-        </div>
+          <span className="text-sm md:text-base font-normal opacity-80">
+            till 23:55
+          </span>        </div>
 
         <div className="flex flex-col">
           <div className="flex items-center gap-3">

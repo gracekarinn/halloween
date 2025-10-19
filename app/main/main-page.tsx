@@ -8,7 +8,7 @@ import { Location } from "components/location";
 export function MainPage() {
   return (
     <main className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden text-center text-[#fffbe6] pt-10">
-      <div className="relative w-full max-w-[70vh] h-[40vh] lg:h-[50vh] overflow-hidden bg-[url('/atas.png')] bg-cover bg-center flex flex-col items-center justify-center">
+      <div className="relative w-full max-w-[70vh] h-[40vh] lg:h-[50vh] overflow-hidden bg-[url('/atas.png')] bg-contain bg-center flex flex-col items-center justify-center">
         <img
           src="/hero.png"
           alt="Hero background"
@@ -16,11 +16,11 @@ export function MainPage() {
         />
       </div>
 
-      <div className="z-10 mt-32">
+      <div className="z-10">
         <CountdownTimer targetDate={new Date("2025-10-31T00:00:00")} />
       </div>
 
-      <div className="relative w-full max-w-[70vh] h-[60vh] overflow-hidden max-lg:bg-[url('/period.png')] bg-cover bg-center flex flex-col items-center justify-center pb-10 mt-10">
+      <div className="relative w-full max-w-[70vh] h-[60vh] overflow-hidden max-lg:bg-[url('/period.png')] bg-cover bg-center flex flex-col items-center justify-center pb-10">
         <div className="z-10 flex flex-col items-center animate-bounce-slow mb-6 max-lg:-translate-y-10">
           <span className="font-normal text-halloween-3 text-xl mb-2">
             Scroll Down
@@ -28,7 +28,7 @@ export function MainPage() {
           <ChevronsDown className="w-8 h-5 text-halloween-3 scale-x-[1.8]" />
         </div>
 
-        <div className="z-10 pt-16">
+        <div className="z-100 pt-16">
           <SecureSpotButton />
         </div>
       </div>

@@ -2,7 +2,7 @@ import { Button } from "./ui/button";
 
 export function SecureSpotButton() {
   return (
-    <div className="relative flex justify-center items-center">
+    <div className="fixed bottom-12 left-1/2 -translate-x-1/2 z-50 flex justify-center items-center">
       <div className="absolute top-1/2 -translate-y-1/2 w-[420px] h-[180px] rounded-[371px] bg-[#FCF9C2] opacity-30 blur-[57px]" />
       <Button
         asChild
