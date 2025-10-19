@@ -37,26 +37,26 @@ export function MainPage() {
         <EventHighlights />
       </div>
 
-      <div className="z-10 pt-4">
+      <div className="z-10 pt-4 relative">
         <LastYear />
+        <img
+          src="/virgo.png"
+          alt="Virgo decoration"
+          className="absolute left-0 top-full -translate-x-[55%] -translate-y-[45%] w-[90%] sm:w-[420px] md:w-[500px] opacity-80 md:hidden pointer-events-none select-none"
+        />
       </div>
 
-      <div className="z-10 -translate-y-40">
-        <div className="absolute">
-          <img
-            src="/virgo.png"
-            alt="Virgo decoration"
-            className="relative w-full h-auto translate-x-[-50%] md:hidden"
-          />
+      <div className="relative w-full flex flex-col items-center justify-center mt-8 mb-16 min-h-[400px]">
+        <div className="relative z-10">
+          <Location />
         </div>
-        <Location />
       </div>
 
-      <div className="relative w-full -translate-y-16">
+      <div className="relative w-full -translate-y-16 md:hidden">
         <div className="absolute bottom-[-80px] w-full h-[40vh] lg:h-[50vh] bg-[url('/atas.png')] bg-cover bg-center opacity-90 pointer-events-none select-none"></div>
       </div>
 
-      <div className="z-10 pt-16 pb-24 flex flex-col items-center text-center text-[#FEFBC1] -translate-y-36">
+      <div className="z-10 -translate-y-24 pt-32 pb-32 sm:pb-40 flex flex-col items-center text-center text-[#FEFBC1] -translate-y-3Z">
         <h2 className="text-lg md:text-xl text-[#C44B1A] tracking-widest mb-4">
           ERROR 404: COSTUME NOT FOUND
         </h2>
@@ -67,7 +67,7 @@ export function MainPage() {
         </p>
       </div>
 
-      <div className="pt-10 absolute translate-y-1/2 bottom-0 w-full h-[40vh] max-lg:bg-[url('/period.png')] bg-cover bg-center opacity-80 pointer-events-none select-none"></div>
+      <div className="pt-10 absolute sm:h-[60vh] translate-y-1/2 bottom-0 w-full h-[50vh] max-lg:bg-[url('/period.png')] bg-cover bg-center opacity-80 pointer-events-none select-none"></div>
     </main>
   );
 }
