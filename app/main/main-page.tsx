@@ -17,7 +17,7 @@ export function MainPage() {
       </div>
 
       <div className="z-10">
-        <CountdownTimer targetDate={new Date("2025-10-31T00:00:00")} />
+        <CountdownTimer targetDate={new Date(2025, 9, 31, 22, 0, 0)} />
       </div>
 
       <div className="relative w-full max-w-[70vh] h-[60vh] overflow-hidden max-lg:bg-[url('/period.png')] bg-cover bg-center flex flex-col items-center justify-center pb-10">
